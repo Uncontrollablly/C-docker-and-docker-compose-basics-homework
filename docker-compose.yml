@@ -9,7 +9,5 @@ services:
       - bob
   bob:
     build: ./bob
-      ports:
-        - '8081:8081'
-      depends_on:
-        - bob
+    ports:
+      - '8081:8081'

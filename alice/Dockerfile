@@ -1,5 +1,5 @@
 # 使用JDK11.0.7
-FROM java:11.0.7
+FROM openjdk:11.0.7
 
 # 拷贝JAR包
 COPY build/libs/alice-0.0.1-SNAPSHOT.jar app.jar

@@ -14,7 +14,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String helloFromBob() {
-        String url = "http://localhost:8081/hello";
+        String url = "http://bob:8081/hello";
 
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity responseEntity = restTemplate.getForEntity(url, String.class);
